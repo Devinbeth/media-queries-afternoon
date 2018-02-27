@@ -26,7 +26,7 @@ class App extends Component {
             </div>
             <div onClick={() => this.setState({ menu: !this.state.menu })} className='ham'>
               <p>MENU</p>
-              <img src={hamburger} alt=''/>
+              <img className='hamburger' src={hamburger} alt=''/>
             </div>
           </nav>
           <div className={this.state.menu ? 'menu slide' : 'menu'}>

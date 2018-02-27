@@ -64,6 +64,10 @@
   padding-bottom: 30px;
 }
 
+.hamburger {
+  display: none;
+}
+
 @media(max-width: 1000px) {
   .links {
     display: none;
@@ -74,13 +78,21 @@
     align-items: center;
     border-radius: 5px;
     height: 40px;
-    width: 90px;
+    width: 110px;
     background: #FED039;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-   
     color: white;
-    letter-spacing: 2px;
     margin: 5%;
+  }
+
+  .ham p {
+    margin-left: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    height: 40px;
+    margin-right: 10px;
   }
 }
 

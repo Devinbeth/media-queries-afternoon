@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import hamburger from './img/hamburger.png';
 
 class App extends Component {
   constructor() {
@@ -23,7 +24,10 @@ class App extends Component {
               <span>TEAM</span>
               <span>CONTACT</span>
             </div>
-            <div onClick={() => this.setState({ menu: !this.state.menu })} className='ham'><p>MENU</p></div>
+            <div onClick={() => this.setState({ menu: !this.state.menu })} className='ham'>
+              <p>MENU</p>
+              <img src={hamburger} alt=''/>
+            </div>
           </nav>
           <div className={this.state.menu ? 'menu slide' : 'menu'}>
             <span>SERVICES</span>
@@ -41,10 +45,20 @@ class App extends Component {
         <div className='services'>
           <h1>SERVICES</h1>
           <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-          <div>
-            <div>
-              <img src='' alt=''/>
+          <div className='container'>
+            <div className='content'>
+              <div className='circle'></div>
               <h3>E-Commerce</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div className='content'>
+              <div className='circle'></div>
+              <h3>Responsive Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div className='content'>
+              <div className='circle'></div>
+              <h3>Web Security</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
             </div>
           </div>
